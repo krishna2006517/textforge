@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TextForge AI — 3D Text & Logo Maker</title>
+<meta name="description" content="Create 3D text, gaming logos, neon typography and professional text effects online with TextForge AI.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://YOUR-USERNAME.github.io/textforge-ai/">
+<meta property="og:title" content="TextForge AI — 3D Text & Logo Maker">
+<meta property="og:description" content="Create stunning 3D text, logos and typography online.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/textforge-ai/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"TextForge AI","applicationCategory":"DesignApplication","description":"Browser-based 3D text and logo design tool.","operatingSystem":"Web"}
+</script>
+<style>
+:root{--bg:#07070b;--panel:#101018;--panel2:#151521;--line:#292739;--text:#f7f5ff;--muted:#aaa6b9;--a:#9b6cff;--b:#38d4ff;--danger:#ff5577}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 15% 0,#27134b 0,transparent 32%),radial-gradient(circle at 90% 15%,#07394a 0,transparent 30%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif}button,input,select{font:inherit}button{cursor:pointer}
+.nav{height:70px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 28px;position:sticky;top:0;z-index:20;background:#07070bdd;backdrop-filter:blur(18px)}.logo{font-size:21px;font-weight:900}.logo i{font-style:normal;background:linear-gradient(90deg,var(--a),var(--b));color:transparent;background-clip:text}.links{display:flex;gap:24px;color:#c4c0d2}.links a:hover{color:#fff}.actions{display:flex;gap:9px}
+.btn{border:1px solid var(--line);background:#171722;color:#fff;border-radius:11px;padding:10px 15px;font-weight:750}.primary{border:0;background:linear-gradient(135deg,var(--a),var(--b));box-shadow:0 10px 35px #815be833}.icon{width:40px;padding:9px}
+.hero{max-width:1200px;margin:auto;text-align:center;padding:80px 25px 50px}.pill{display:inline-block;border:1px solid #3d3154;background:#171021;border-radius:999px;padding:8px 13px;color:#d3c2ff;font-size:13px}.hero h1{font-size:clamp(44px,7vw,84px);line-height:.98;letter-spacing:-4px;margin:20px auto 17px;max-width:950px}.grad{background:linear-gradient(90deg,#fff,#bb8aff,#51dcff);background-clip:text;color:transparent}.hero p{max-width:690px;margin:auto;color:var(--muted);font-size:18px;line-height:1.65}.heroBtns{margin:26px 0;display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.heroPreview{max-width:1050px;margin:35px auto 0;padding:25px;border:1px solid var(--line);border-radius:25px;background:#0e0e15aa;box-shadow:0 35px 100px #0009}.heroText{font-size:clamp(55px,10vw,115px);font-weight:950;letter-spacing:-6px;background:linear-gradient(#fff,#b890ff 45%,#44d7ff);background-clip:text;color:transparent;text-shadow:0 14px 0 #241c45,0 25px 40px #000,0 0 35px #8e64ff;transform:perspective(600px) rotateX(7deg);padding:35px}
+.section{max-width:1250px;margin:auto;padding:70px 25px}.section h2{font-size:38px;margin:0 0 9px}.sub{color:var(--muted);line-height:1.65}
+.editor{display:grid;grid-template-columns:275px minmax(0,1fr) 275px;gap:14px;margin-top:25px}.panel{background:#0e0e16;border:1px solid var(--line);border-radius:18px;padding:16px}.panel h3{margin:4px 0 15px}.field{margin-bottom:14px}.field label{display:flex;justify-content:space-between;color:#a8a4b6;font-size:11px;font-weight:700;margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}.field input[type=text],.field input[type=number],.field select{width:100%;background:#171722;border:1px solid #322f40;color:#fff;border-radius:9px;padding:10px;outline:none}.field input[type=color]{width:100%;height:38px;padding:3px;background:#171722;border:1px solid #322f40;border-radius:9px}.field input[type=range]{width:100%}.row{display:grid;grid-template-columns:1fr 1fr;gap:8px}.check{display:flex;align-items:center;gap:8px;color:#bbb6c8;font-size:13px;margin:9px 0}.canvasWrap{background:#0a0a10;border:1px solid var(--line);border-radius:18px;padding:14px;min-height:560px;display:flex;flex-direction:column}.toolbar{display:flex;gap:7px;flex-wrap:wrap;padding-bottom:12px}.canvas{flex:1;min-height:475px;border-radius:14px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;background-color:#090a10;background-image:linear-gradient(#ffffff09 1px,transparent 1px),linear-gradient(90deg,#ffffff09 1px,transparent 1px);background-size:32px 32px}.art{user-select:none;white-space:pre-wrap;text-align:center;max-width:90%;font-weight:950;line-height:.95;transform-style:preserve-3d;transition:.15s}.canvas.transparent{background-color:#fff;background-image:linear-gradient(45deg,#ddd 25%,transparent 25%),linear-gradient(-45deg,#ddd 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#ddd 75%),linear-gradient(-45deg,transparent 75%,#ddd 75%);background-size:24px 24px;background-position:0 0,0 12px,12px -12px,-12px 0}.mini{font-size:12px;color:#77718a;margin-top:8px}.presetGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.preset{min-height:70px;border:1px solid var(--line);background:#151520;border-radius:12px;color:#fff;font-size:18px;font-weight:900}.preset:hover{border-color:#75609e;transform:translateY(-1px)}.tabs{display:flex;gap:6px;margin-bottom:15px}.tab{flex:1}.tab.active{background:#27223a;border-color:#66528d}
+.templateGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:25px}.template{min-height:150px;border:1px solid var(--line);border-radius:17px;padding:17px;display:flex;align-items:end;background:linear-gradient(145deg,#191526,#0e1017);font-size:28px;font-weight:950;cursor:pointer;overflow:hidden}.template:hover{border-color:#71619a;transform:translateY(-2px)}.t-neon{color:#69eaff;text-shadow:0 0 12px #38d4ff,0 0 35px #9b6cff}.t-gold{color:#f4d77d;text-shadow:3px 5px 0 #6c4c16,0 10px 25px #000}.t-chrome{background:linear-gradient(#fff,#777,#fff,#222);background-clip:text;color:transparent;text-shadow:3px 4px 0 #111}.t-fire{color:#ff9a4d;text-shadow:0 0 10px #ff5a00,0 0 35px #e22}.t-ice{color:#c5fbff;text-shadow:0 0 12px #5de8ff,0 0 32px #267cff}.t-pink{color:#ff9be9;text-shadow:0 0 18px #ff36c8}.t-dark{color:#eee;text-shadow:5px 6px #000,0 12px 25px #000}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:25px}.price{background:#0e0e16;border:1px solid var(--line);border-radius:18px;padding:22px}.price.featured{border-color:#765ab2;box-shadow:0 20px 60px #7c58c522}.price strong{font-size:42px}.price ul{color:var(--muted);line-height:2;padding-left:20px}.footer{border-top:1px solid var(--line);padding:35px 25px;text-align:center;color:var(--muted)}
+.modal{position:fixed;inset:0;background:#0009;display:none;align-items:center;justify-content:center;z-index:50;padding:20px}.modal.show{display:flex}.modalBox{max-width:650px;width:100%;background:#11111a;border:1px solid var(--line);border-radius:20px;padding:24px}.modalBox textarea{width:100%;min-height:120px;background:#171722;border:1px solid var(--line);color:white;border-radius:12px;padding:13px;resize:vertical}
+.toast{position:fixed;right:20px;bottom:20px;background:#171722;border:1px solid var(--line);padding:13px 16px;border-radius:12px;display:none;z-index:80}.toast.show{display:block}
+@media(max-width:1000px){.editor{grid-template-columns:240px 1fr}.editor>.panel:last-child{grid-column:1/-1}.templateGrid{grid-template-columns:1fr 1fr}}@media(max-width:720px){.links{display:none}.nav{padding:0 15px}.editor{grid-template-columns:1fr}.canvasWrap{order:-1}.templateGrid,.pricing{grid-template-columns:1fr}.hero h1{letter-spacing:-2px}.section{padding:48px 15px}.hero{padding:60px 15px 30px}}
+</style>
+</head>
+<body>
+<nav class="nav">
+<a class="logo" href="#">TextForge <i>AI</i></a>
+<div class="links"><a href="#editor">Create</a><a href="#templates">Templates</a><a href="#features">Features</a><a href="#pricing">Pricing</a></div>
+<div class="actions"><button class="btn" onclick="openAI()">AI Generate</button><button class="btn primary" onclick="scrollToEditor()">Start Creating</button></div>
+</nav>
+
+<header class="hero">
+<div class="pill">✦ Browser-based AI typography studio</div>
+<h1>Turn words into <span class="grad">powerful visual designs.</span></h1>
+<p>Create 3D logos, gaming text, neon typography, metallic titles and social graphics with a fast browser editor.</p>
+<div class="heroBtns"><button class="btn primary" onclick="scrollToEditor()">Create Design</button><button class="btn" onclick="document.querySelector('#templates').scrollIntoView()">Explore Templates</button></div>
+<div class="heroPreview"><div class="heroText">NIGHT WARRIOR</div></div>
+</header>
+
+<section class="section" id="editor">
+<h2>Professional Text Editor</h2><p class="sub">Everything runs in your browser. Change a control and see the result instantly.</p>
+<div class="editor">
+<div class="panel">
+<h3>Text</h3>
+<div class="field"><label>Text</label><input id="text" type="text" value="NIGHT WARRIOR"></div>
+<div class="field"><label>Font</label><select id="font"><option>Arial Black</option><option>Impact</option><option>Georgia</option><option>Trebuchet MS</option><option>Verdana</option><option>Courier New</option></select></div>
+<div class="field"><label>Size <span id="sizeVal">76</span></label><input id="size" type="range" min="25" max="150" value="76"></div>
+<div class="field"><label>Spacing <span id="spacingVal">-2</span></label><input id="spacing" type="range" min="-10" max="20" value="-2"></div>
+<div class="field"><label>Text Color</label><input id="color" type="color" value="#ffffff"></div>
+<div class="row"><div class="field"><label>Rotate X</label><input id="rx" type="range" min="-35" max="35" value="7"></div><div class="field"><label>Rotate Y</label><input id="ry" type="range" min="-35" max="35" value="0"></div></div>
+<div class="field"><label>Rotate Z</label><input id="rz" type="range" min="-20" max="20" value="0"></div>
+<label class="check"><input id="transparent" type="checkbox"> Transparent canvas</label>
+</div>
+
+<div class="canvasWrap">
+<div class="toolbar">
+<button class="btn icon" title="Undo" onclick="undo()">↶</button><button class="btn icon" title="Redo" onclick="redo()">↷</button>
+<button class="btn" onclick="duplicate()">Duplicate</button><button class="btn" onclick="resetDesign()">Reset</button>
+<button class="btn primary" onclick="downloadSVG()">Export SVG</button><button class="btn primary" onclick="downloadPNG()">Export PNG</button>
+</div>
+<div class="canvas" id="canvas"><div class="art t-neon" id="art">NIGHT WARRIOR</div></div>
+<div class="mini">Tip: export PNG for social media or SVG for scalable logos.</div>
+</div>
+
+<div class="panel">
+<div class="tabs"><button class="btn tab active" onclick="showTab('effects',this)">Effects</button><button class="btn tab" onclick="showTab('presets',this)">Presets</button></div>
+<div id="effects">
+<h3>Effects</h3>
+<div class="field"><label>Effect</label><select id="effect"><option value="neon">Neon Glow</option><option value="gold">Luxury Gold</option><option value="chrome">Chrome 3D</option><option value="fire">Fire</option><option value="ice">Ice</option><option value="pink">Cyber Pink</option><option value="dark">Shadow</option><option value="none">Clean</option></select></div>
+<div class="field"><label>Shadow strength</label><input id="shadow" type="range" min="0" max="50" value="25"></div>
+<div class="field"><label>Opacity</label><input id="opacity" type="range" min="20" max="100" value="100"></div>
+<button class="btn primary" style="width:100%" onclick="openAI()">Generate with AI</button>
+</div>
+<div id="presets" style="display:none"><h3>Quick Presets</h3><div class="presetGrid">
+<button class="preset t-neon" onclick="preset('neon')">NEON</button><button class="preset t-gold" onclick="preset('gold')">GOLD</button><button class="preset t-chrome" onclick="preset('chrome')">CHROME</button><button class="preset t-fire" onclick="preset('fire')">FIRE</button><button class="preset t-ice" onclick="preset('ice')">ICE</button><button class="preset t-pink" onclick="preset('pink')">CYBER</button>
+</div></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="templates">
+<h2>Template Library</h2><p class="sub">Click any design to load it into the editor.</p>
+<div class="templateGrid">
+<div class="template t-neon" onclick="loadTemplate('CYBER FORCE','neon')">CYBER FORCE</div>
+<div class="template t-gold" onclick="loadTemplate('ROYAL GOLD','gold')">ROYAL GOLD</div>
+<div class="template t-chrome" onclick="loadTemplate('STEEL','chrome')">STEEL</div>
+<div class="template t-fire" onclick="loadTemplate('INFERNO','fire')">INFERNO</div>
+<div class="template t-ice" onclick="loadTemplate('FROST','ice')">FROST</div>
+<div class="template t-pink" onclick="loadTemplate('NOVA','pink')">NOVA</div>
+<div class="template t-dark" onclick="loadTemplate('LEGEND','dark')">LEGEND</div>
+<div class="template t-neon" onclick="loadTemplate('ESPORTS','neon')">ESPORTS</div>
+</div>
+</section>
+
+<section class="section" id="features">
+<h2>Built for creators</h2>
+<div class="templateGrid">
+<div class="panel"><h3>3D Typography</h3><p class="sub">Control perspective, rotation, depth-style shadows and lighting.</p></div>
+<div class="panel"><h3>AI Prompting</h3><p class="sub">Describe the visual you want. Connect your preferred AI API later.</p></div>
+<div class="panel"><h3>Browser Export</h3><p class="sub">Generate SVG and PNG locally without uploading your design.</p></div>
+<div class="panel"><h3>Responsive</h3><p class="sub">Designed for desktop, tablet and mobile screens.</p></div>
+</div>
+</section>
+
+<section class="section" id="pricing">
+<h2>Simple pricing</h2><p class="sub">The static GitHub Pages version is free to host. Add a backend later for subscriptions.</p>
+<div class="pricing">
+<div class="price"><h3>Free</h3><strong>$0</strong><ul><li>Browser editor</li><li>Text effects</li><li>SVG and PNG export</li><li>Starter templates</li></ul><button class="btn primary" onclick="scrollToEditor()">Start Free</button></div>
+<div class="price featured"><h3>Pro</h3><strong>$9</strong><ul><li>Premium templates</li><li>Advanced exports</li><li>AI generations</li><li>Commercial features</li></ul><button class="btn primary" onclick="toast('Connect Stripe on your backend for Pro billing.')">Get Pro</button></div>
+<div class="price"><h3>Business</h3><strong>$29</strong><ul><li>Brand kits</li><li>Team workspace</li><li>Priority AI</li><li>Commercial license</li></ul><button class="btn" onclick="toast('Business billing requires a backend.')">Choose Business</button></div>
+</div>
+</section>
+
+<footer class="footer">© 2026 TextForge AI · 3D Text Generator · AI Logo Maker · Templates · Privacy · Terms</footer>
+
+<div class="modal" id="modal"><div class="modalBox">
+<div style="display:flex;justify-content:space-between;align-items:center"><h2>AI Design Generator</h2><button class="btn" onclick="closeAI()">✕</button></div>
+<p class="sub">Describe your design. This GitHub Pages build provides the UI; connect a secure serverless AI endpoint for real generation.</p>
+<textarea id="aiPrompt" placeholder="Example: futuristic gaming logo, metallic silver text, blue neon glow, dark cyberpunk background..."></textarea>
+<div style="display:flex;gap:8px;margin-top:12px"><button class="btn" onclick="closeAI()">Cancel</button><button class="btn primary" onclick="applyAI()">Create Concept</button></div>
+</div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const $=id=>document.getElementById(id), art=$('art'), canvas=$('canvas');
+let history=[],future=[];
+function snapshot(){return {text:$('text').value,font:$('font').value,size:$('size').value,spacing:$('spacing').value,color:$('color').value,rx:$('rx').value,ry:$('ry').value,rz:$('rz').value,effect:$('effect').value,shadow:$('shadow').value,opacity:$('opacity').value}}
+function push(){history.push(snapshot());if(history.length>30)history.shift();future=[]}
+function apply(){art.textContent=$('text').value||'YOUR TEXT';art.style.fontFamily=$('font').value;art.style.fontSize=$('size').value+'px';art.style.letterSpacing=$('spacing').value+'px';art.style.color=$('color').value;art.style.opacity=$('opacity').value/100;art.style.transform=`perspective(650px) rotateX(${$('rx').value}deg) rotateY(${$('ry').value}deg) rotateZ(${$('rz').value}deg)`;$('sizeVal').textContent=$('size').value;$('spacingVal').textContent=$('spacing').value;applyEffect($('effect').value)}
+function applyEffect(e){art.className='art '+(e==='none'?'':`t-${e}`);let s=+$('shadow').value;if(e==='none')art.style.textShadow=`0 ${s/3}px ${s}px #000`;if(e==='neon')art.style.textShadow=`0 0 ${s/2}px #38d4ff,0 0 ${s*1.4}px #9b6cff,0 ${s/4}px 0 #18234c`;if(e==='gold')art.style.textShadow=`${s/7}px ${s/5}px 0 #6c4c16,0 ${s/2}px ${s}px #000`;if(e==='chrome')art.style.textShadow=`${s/10}px ${s/8}px 0 #111,0 ${s/2}px ${s}px #000`;if(e==='fire')art.style.textShadow=`0 0 ${s/3}px #ff8a00,0 0 ${s}px #e22`;if(e==='ice')art.style.textShadow=`0 0 ${s/3}px #5de8ff,0 0 ${s}px #267cff`;if(e==='pink')art.style.textShadow=`0 0 ${s/3}px #ff36c8,0 0 ${s}px #a13cff`;if(e==='dark')art.style.textShadow=`${s/4}px ${s/4}px 0 #000,0 ${s}px ${s}px #000`}
+function listen(){push();apply()}
+['text','font','size','spacing','color','rx','ry','rz','effect','shadow','opacity'].forEach(id=>{$(id).addEventListener('input',apply);$(id).addEventListener('change',apply)})
+$('transparent').onchange=e=>canvas.classList.toggle('transparent',e.target.checked)
+function preset(e){push();$('effect').value=e;applyEffect(e);toast(e.toUpperCase()+' preset applied')}
+function loadTemplate(t,e){push();$('text').value=t;$('effect').value=e;apply();scrollToEditor();toast('Template loaded')}
+function scrollToEditor(){$('editor').scrollIntoView({behavior:'smooth',block:'start'})}
+function showTab(id,btn){document.querySelectorAll('#effects,#presets').forEach(x=>x.style.display='none');$(id).style.display='block';document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));btn.classList.add('active')}
+function duplicate(){push();$('text').value=$('text').value+' COPY';apply()}
+function resetDesign(){push();$('text').value='NIGHT WARRIOR';$('font').value='Arial Black';$('size').value=76;$('spacing').value=-2;$('color').value='#ffffff';$('rx').value=7;$('ry').value=0;$('rz').value=0;$('effect').value='neon';$('shadow').value=25;$('opacity').value=100;apply()}
+function restore(s){Object.keys(s).forEach(k=>{if($(k))$(k).value=s[k]});apply()}
+function undo(){if(!history.length)return toast('Nothing to undo');future.push(snapshot());restore(history.pop())}
+function redo(){if(!future.length)return toast('Nothing to redo');history.push(snapshot());restore(future.pop())}
+function openAI(){$('modal').classList.add('show');$('aiPrompt').focus()}
+function closeAI(){$('modal').classList.remove('show')}
+function applyAI(){let p=$('aiPrompt').value.toLowerCase();if(p.includes('gold'))$('effect').value='gold';else if(p.includes('chrome')||p.includes('metal'))$('effect').value='chrome';else if(p.includes('fire'))$('effect').value='fire';else if(p.includes('ice'))$('effect').value='ice';else if(p.includes('pink')||p.includes('cyber'))$('effect').value='pink';else $('effect').value='neon';let words=p.split(/[ ,]+/).filter(x=>x.length>3).slice(-3).join(' ').toUpperCase();if(words)$('text').value=words.slice(0,28);push();apply();closeAI();toast('Concept created. Connect a real AI endpoint for image generation.')}
+function downloadSVG(){let text=$('text').value.replace(/[<>&'"]/g,'');let color=$('color').value;let size=$('size').value;let svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800" viewBox="0 0 1600 800"><defs><filter id="shadow"><feDropShadow dx="0" dy="14" stdDeviation="16" flood-opacity=".6"/></filter></defs><rect width="1600" height="800" fill="#090a10"/><text x="800" y="450" text-anchor="middle" fill="${color}" font-family="${$('font').value}" font-size="${size*1.5}" font-weight="900" filter="url(#shadow)">${text}</text></svg>`;downloadBlob(svg,'textforge-design.svg','image/svg+xml')}
+function downloadBlob(data,name,type){let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([data],{type}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+function downloadPNG(){let c=document.createElement('canvas'),ctx=c.getContext('2d'),w=1600,h=800;c.width=w;c.height=h;ctx.fillStyle='#090a10';ctx.fillRect(0,0,w,h);ctx.textAlign='center';ctx.textBaseline='middle';ctx.font=`900 ${$('size').value*1.5}px ${$('font').value}`;ctx.fillStyle=$('color').value;ctx.shadowColor='#000';ctx.shadowBlur=22;ctx.shadowOffsetY=14;ctx.fillText($('text').value,800,400);c.toBlob(b=>{let a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='textforge-design.png';a.click()},'image/png')}
+function toast(m){let t=$('toast');t.textContent=m;t.classList.add('show');clearTimeout(window.__t);window.__t=setTimeout(()=>t.classList.remove('show'),2600)}
+history.push(snapshot());apply();
+</script>
+</body>
+</html>
