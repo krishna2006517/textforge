@@ -4,4 +4,4 @@ Disallow: /admin
 Disallow: /dashboard
 Disallow: /settings
 Disallow: /api/
-Sitemap: https://YOUR-USERNAME.github.io/textforge-ai/sitemap.xml
+Sitemap: https://krishna2006517.github.io/textforge/sitemap.xml
